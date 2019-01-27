@@ -1,0 +1,16 @@
+<h1>There are {{count}} words in your entered text!</h1>
+
+<h1>Original Text:</h1>
+{{fulltext}}
+
+<h2>count of words:</h2>
+<p>
+{% for word,countofit in Sortedwords%}
+{{word}} - {{countofit}}
+<br />
+
+{% endfor %}
+<h2>Category Predicted:</h2>
+{{t}}
+
+</p>
